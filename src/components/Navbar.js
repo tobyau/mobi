@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { Input, Menu, Icon, Button } from 'semantic-ui-react';
+import { Input, Menu, Dropdown } from 'semantic-ui-react';
 
-const ProfileButton = () => (
-    <Button circular icon>
-        <Icon name='user outline' size="large" />
-    </Button>
+const ProfileDropDown = () => (
+    <Dropdown button className='circular icon' icon='user outline'> 
+        <Dropdown.Menu>
+            <Dropdown.Item>Account</Dropdown.Item>
+            <Dropdown.Item>Logout</Dropdown.Item>
+        </Dropdown.Menu>
+    </Dropdown>
 )
 
 class MenuExampleSecondary extends Component {
@@ -33,7 +36,7 @@ class MenuExampleSecondary extends Component {
             <Input icon='search' placeholder='Search...' />
           </Menu.Item>
           <Menu.Item>
-              <ProfileButton />
+              <ProfileDropDown />
           </Menu.Item>
         </Menu.Menu>
       </Menu>
