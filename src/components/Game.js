@@ -16,4 +16,4 @@ const items = [
 
 const CardExampleGroupCentered = () => <Card.Group centered items={items} />
 
-export default CardExampleGroupCentered
+export default CardExampleGroupCentered;
