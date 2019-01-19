@@ -1,6 +1,5 @@
 import React from 'react';
 import { Advertisement, List, Image } from 'semantic-ui-react';
-import './Leaderboard.css';
 
 const Leaderboard = () => (
   <List relaxed='very'>
