@@ -1,53 +1,77 @@
 import React from 'react';
-import { Advertisement, List, Image } from 'semantic-ui-react';
+import { Table, Image , Header} from 'semantic-ui-react';
+
+const BoardHeader = () => (
+  <Header as='h2' block textAlign="center" inverted color="blue">
+    Leaderboard
+  </Header>
+)
 
 const Leaderboard = () => (
-  <List relaxed='very'>
-    <List.Item>
-      <Image avatar src='https://react.semantic-ui.com/images/avatar/small/daniel.jpg' />
-      <List.Content>
-        <List.Header as='a'>Daniel Louise</List.Header>
-        <List.Description>
-          Last seen watching{' '}
-          <div>
-            <b>Arrested Development</b>
-          </div>{' '}
-          just now.
-        </List.Description>
-      </List.Content>
-    </List.Item>
-    <List.Item>
-      <Image avatar src='https://react.semantic-ui.com/images/avatar/small/stevie.jpg' />
-      <List.Content>
-        <List.Header as='a'>Stevie Feliciano</List.Header>
-        <List.Description>
-          Last seen watching{' '}
-          <div>
-            <b>Bob's Burgers</b>
-          </div>{' '}
-          10 hours ago.
-        </List.Description>
-      </List.Content>
-    </List.Item>
-    <List.Item>
-      <Image avatar src='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
-      <List.Content>
-        <List.Header as='a'>Elliot Fu</List.Header>
-        <List.Description>
-          Last seen watching{' '}
-          <div>
-            <b>The Godfather Part 2</b>
-          </div>{' '}
-          yesterday.
-        </List.Description>
-      </List.Content>
-    </List.Item>
-  </List>
+  <Table basic='very' celled collapsing>
+    <Table.Header>
+      <Table.Row>
+        <Table.HeaderCell>Rank</Table.HeaderCell>
+        <Table.HeaderCell>Players</Table.HeaderCell>
+      </Table.Row>
+    </Table.Header>
+
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell>22</Table.Cell>
+        <Table.Cell>
+          <Header as='h4' image>
+            <Image src='https://react.semantic-ui.com/images/avatar/small/lena.png' rounded size='mini' />
+            <Header.Content>
+              Lena
+              <Header.Subheader>Human Resources</Header.Subheader>
+            </Header.Content>
+          </Header>
+        </Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>11</Table.Cell>
+        <Table.Cell>
+          <Header as='h4' image>
+            <Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />
+            <Header.Content>
+              Mark
+              <Header.Subheader>Executive</Header.Subheader>
+            </Header.Content>
+          </Header>
+        </Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>11</Table.Cell>
+        <Table.Cell>
+          <Header as='h4' image>
+            <Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />
+            <Header.Content>
+              Mark
+              <Header.Subheader>Executive</Header.Subheader>
+            </Header.Content>
+          </Header>
+        </Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>11</Table.Cell>
+        <Table.Cell>
+          <Header as='h4' image>
+            <Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />
+            <Header.Content>
+              Mark
+              <Header.Subheader>Executive</Header.Subheader>
+            </Header.Content>
+          </Header>
+        </Table.Cell>
+      </Table.Row>
+    </Table.Body>
+  </Table>
 )
 
 const LeaderboardPage = () => (
   <div>
-    <Advertisement unit='leaderboard' test='Leaderboard' />
+    <BoardHeader />
     <Leaderboard />
   </div>
 )

@@ -7,16 +7,25 @@ import ProfilePage from './ProfilePage'
 import FriendsPage from './FriendsPage/FriendsPage'
 import LeaderboardPage from './LeaderboardPage/LeaderboardPage'
 
+/*
+If login or signup is true, 
+*/
 
 const RoutePages = () => (
   <div>
-    <LoginPage />
-    <Navbar />
+    <Switch>
+      <Route exact path='/' component={LoginPage}/>
+    </Switch>
+
+    <Switch>
+      <Route path='/(Home|Leaderboard|Friends|Profile)/' component={Navbar}/>
+    </Switch>
+    
     <Switch>
       <Route exact path='/Home' component={GamePage}/>
-      <Route path='/Leaderboard' component={LeaderboardPage}/>
-      <Route path='/Friends' component={FriendsPage}/>
-      <Route path='/Profile' component={ProfilePage}/>
+      <Route exact path='/Leaderboard' component={LeaderboardPage}/>
+      <Route exact path='/Friends' component={FriendsPage}/>
+      <Route exact path='/Profile' component={ProfilePage}/>
     </Switch>
   </div>
 )
