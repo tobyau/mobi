@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Image, List } from 'semantic-ui-react'
 
-const ListExampleFloated = () => (
+const ListOfFriends = () => (
   <List divided verticalAlign='middle'>
     <List.Item>
       <List.Content floated='right'>
@@ -34,4 +34,4 @@ const ListExampleFloated = () => (
   </List>
 )
 
-export default ListExampleFloated;
+export default ListOfFriends;

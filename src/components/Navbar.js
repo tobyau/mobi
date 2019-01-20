@@ -7,7 +7,7 @@ class MenuExampleSecondary extends Component {
   render() {
     return (
         <Menu secondary className="nav-container">
-            <Menu.Item className="navleft" name='Home' as={NavLink} to="/"/>
+            <Menu.Item className="navleft" name='Home' as={NavLink} to="/Home"/>
             <Menu.Item className="navleft" name='Leaderboard' as={NavLink} to="/Leaderboard"  />
             <Menu.Item className="navleft" name='Friends' as={NavLink} to="/Friends" />
             <Menu.Menu position='right'>
