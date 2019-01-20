@@ -12,29 +12,36 @@ class SignupForm extends Component {
       password: ''
     }
   }
+
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  }
+
   render(){
     return(
       <Form>
         <Form.Field>
           <label>First Name</label>
-          <input placeholder='First Name' />
+          <input name="firstName" placeholder='First Name' onChange={this.handleChange}/>
         </Form.Field>
         <Form.Field>
           <label>Last Name</label>
-          <input placeholder='Last Name' />
+          <input name="lastName" placeholder='Last Name' onChange={this.handleChange}/>
         </Form.Field>
         <Form.Field>
           <label>Username</label>
-          <input placeholder='Username' />
+          <input name="username" placeholder='Username' onChange={this.handleChange}/>
         </Form.Field>
         <Form.Field>
           <label>Password</label>
-          <input placeholder='Password' />
+          <input name="password" placeholder='Password' onChange={this.handleChange}/>
         </Form.Field>
         <Form.Field>
           <Checkbox label='I agree to the Terms and Conditions' />
         </Form.Field>
-        <Button type='submit' as={NavLink} to="/Home">Submit</Button>
+        <Button type='submit' onClick={this.handleClick} as={NavLink} to="/Home">Submit</Button>
       </Form>
     );
   }

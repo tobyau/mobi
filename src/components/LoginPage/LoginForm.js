@@ -3,13 +3,14 @@ import { Button, Form } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 //import { LOGIN } from '../actions';
 
+
 class LoginForm extends Component {
   constructor(props){
     super(props);
     this.state = {
       username: '',
       password: '',
-      login: false
+      login: false,
     }
   }
 
@@ -21,7 +22,7 @@ class LoginForm extends Component {
     this.setState({password: e.target.value});
   }
 
-  handleClick = (e) => {
+  handleClick = () => {
     this.setState({login: true});
   }
 
@@ -36,7 +37,7 @@ class LoginForm extends Component {
           <label>Password</label>
           <input name='password' placeholder='Password' onChange={this.handlePW}/>
         </Form.Field>
-        <Button type='submit' as={Link} to="/Home" onClick={this.handleClick}>Login</Button>
+        <Button type='button' as={Link} to="/Home" onClick={this.handleClick}>Login</Button>
       </Form>
     );
   }

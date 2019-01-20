@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import LoginForm from './LoginForm';
-//import SignupForm from './SignupForm';
+import { Tab } from 'semantic-ui-react';
+import SignupForm from './SignupForm';
+
 /*
 depending on the action:
     if login is true, display login form
@@ -9,10 +11,13 @@ depending on the action:
 
 class LoginPage extends Component{
     render(){
+        const panes = [
+            { menuItem: 'Login', render: () => <Tab.Pane> <LoginForm /> </Tab.Pane> },
+            { menuItem: 'Signup', render: () => <Tab.Pane> <SignupForm /> </Tab.Pane> }
+        ]
         return(
             <div>
-                <LoginForm />
-                {/* <SignupForm /> */}
+                <Tab panes={panes} />
             </div>
         );
     }
