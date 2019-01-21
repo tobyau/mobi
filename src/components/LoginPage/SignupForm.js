@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Button, Checkbox, Form } from 'semantic-ui-react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class SignupForm extends Component {
   // also need to input user information into database 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       firstName: '',
@@ -21,40 +21,43 @@ class SignupForm extends Component {
   }
 
   handleClick = (e) => {
-    e.preventDefault();
-    this.props.signUp(
+    this.props.onSignup(
       this.state.firstName,
       this.state.lastName,
       this.state.username,
       this.state.password
     );
-    console.log(this.props.signUp);
-    this.setState({firstName: '', lastName: '', username: '', password: ''});
+    console.log(this.props.onSignup);
+    //console.log(this.state);
+    this.setState({ firstName: '', lastName: '', username: '', password: '' });
   }
 
-  render(){
-    return(
+  render() {
+    console.log(this.props)
+    return (
       <Form>
         <Form.Field>
           <label>First Name</label>
-          <input name="firstName" placeholder='First Name' onChange={this.handleChange}/>
+          <input name="firstName" placeholder='First Name' onChange={this.handleChange} />
         </Form.Field>
         <Form.Field>
           <label>Last Name</label>
-          <input name="lastName" placeholder='Last Name' onChange={this.handleChange}/>
+          <input name="lastName" placeholder='Last Name' onChange={this.handleChange} />
         </Form.Field>
         <Form.Field>
           <label>Username</label>
-          <input name="username" placeholder='Username' onChange={this.handleChange}/>
+          <input name="username" placeholder='Username' onChange={this.handleChange} />
         </Form.Field>
         <Form.Field>
           <label>Password</label>
-          <input name="password" placeholder='Password' onChange={this.handleChange}/>
+          <input name="password" placeholder='Password' onChange={this.handleChange} />
         </Form.Field>
         <Form.Field>
           <Checkbox label='I agree to the Terms and Conditions' />
         </Form.Field>
-        <Button type='submit' onClick={this.handleClick} as={NavLink} to="/Home">Submit</Button>
+
+        <Button type='button' as={Link} to="/Home" onClick={this.handleClick}>Submit</Button>
+
       </Form>
     );
   }

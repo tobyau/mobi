@@ -2,8 +2,8 @@ import { /*LOGIN, */ SIGNUP } from '../actions';
 
 const initialState = {
     user: [],
-    login: false,
-    //signup: false
+    //login: false,
+    signup: false
 }
 
 const Login = (state = initialState, action) => {
