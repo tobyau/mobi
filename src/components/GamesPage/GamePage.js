@@ -1,9 +1,7 @@
 import React from 'react'
 import PresentationalCard from './PresentationalCard';
-import TetrisGame from './TetrisGame';
 
 //const TetrisPicture = require();
-
 const items = [
   {
     src: window.location.origin + '/GamePictures/Tetris.png',
@@ -26,7 +24,6 @@ const GamePage = () => {
   return(
     <div>
       {games}
-      <TetrisGame/>
     </div>
   );
 };

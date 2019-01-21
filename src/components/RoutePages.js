@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import ProfilePage from './ProfilePage'
 import FriendsPage from './FriendsPage/FriendsPage'
 import LeaderboardPage from './LeaderboardPage/LeaderboardPage'
+import TetrisGamePage from './GamesPage/TetrisGame/TetrisGamePage';
 
 /*
 If login or signup is true, 
@@ -26,6 +27,7 @@ const RoutePages = () => (
       <Route exact path='/Leaderboard' component={LeaderboardPage}/>
       <Route exact path='/Friends' component={FriendsPage}/>
       <Route exact path='/Profile' component={ProfilePage}/>
+      <Route exact path='/Tetris' component={TetrisGamePage}/>
     </Switch>
   </div>
 )
