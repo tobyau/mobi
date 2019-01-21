@@ -10,7 +10,7 @@ export const logIn = (username, password) => {
         }
     }
 }
-
+// create thunk creators 
 export const signUp = (first, last, username, password) => {
     return {
         type: SIGNUP,
@@ -22,3 +22,7 @@ export const signUp = (first, last, username, password) => {
         }
     }
 }
+
+// axios request to database 
+// once we get a response , call the action creator using the dispatch method 
+//thunkmiddleware , applymiddleware

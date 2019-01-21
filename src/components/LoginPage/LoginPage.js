@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LoginForm from './LoginForm';
 import { Tab } from 'semantic-ui-react';
-import SignupForm from './SignupForm';
+import SignupDispatch from './SignupDispatch';
 
 /*
 depending on the action:
@@ -13,7 +13,7 @@ class LoginPage extends Component{
     render(){
         const panes = [
             { menuItem: 'Login', render: () => <Tab.Pane> <LoginForm /> </Tab.Pane> },
-            { menuItem: 'Signup', render: () => <Tab.Pane> <SignupForm /> </Tab.Pane> }
+            { menuItem: 'Signup', render: () => <Tab.Pane> <SignupDispatch /> </Tab.Pane> }
         ]
         return(
             <div>
