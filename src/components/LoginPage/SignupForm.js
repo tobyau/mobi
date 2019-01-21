@@ -3,6 +3,7 @@ import { Button, Checkbox, Form } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
 class SignupForm extends Component {
+  // also need to input user information into database 
   constructor(props){
     super(props);
     this.state = {
@@ -17,6 +18,18 @@ class SignupForm extends Component {
     this.setState({
       [e.target.name]: e.target.value
     });
+  }
+
+  handleClick = (e) => {
+    e.preventDefault();
+    this.props.signUp(
+      this.state.firstName,
+      this.state.lastName,
+      this.state.username,
+      this.state.password
+    );
+    console.log(this.props.signUp);
+    this.setState({firstName: '', lastName: '', username: '', password: ''});
   }
 
   render(){

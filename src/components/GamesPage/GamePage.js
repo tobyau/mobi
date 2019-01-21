@@ -18,7 +18,7 @@ const items = [
   }
 ]
 
-var games = items.map((element, index) => (<div key={index}><Game object={element}/></div>)
+var games = items.map((element, index) => (<div key={index}> <Game object={element}/> </div>)
 );
 
 // use the map array function later 
