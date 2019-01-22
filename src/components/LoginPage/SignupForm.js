@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Checkbox, Form } from 'semantic-ui-react';
+import { Button, Form } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 class SignupForm extends Component {
@@ -35,22 +35,22 @@ class SignupForm extends Component {
       <Form>
         <Form.Field>
           <label>First Name</label>
-          <input name="firstName" placeholder='First Name' onChange={this.handleChange} />
+          <Form.Input name="firstName" placeholder='First Name' onChange={this.handleChange}/>
         </Form.Field>
         <Form.Field>
           <label>Last Name</label>
-          <input name="lastName" placeholder='Last Name' onChange={this.handleChange} />
+          <Form.Input name="lastName" placeholder='Last Name' onChange={this.handleChange} />
         </Form.Field>
         <Form.Field>
           <label>Username</label>
-          <input name="username" placeholder='Username' onChange={this.handleChange} />
+          <Form.Input name="username" placeholder='Username' onChange={this.handleChange} />
         </Form.Field>
         <Form.Field>
           <label>Password</label>
-          <input name="password" placeholder='Password' onChange={this.handleChange} />
+          <Form.Input name="password" placeholder='Password' onChange={this.handleChange} />
         </Form.Field>
         <Form.Field>
-          <Checkbox label='I agree to the Terms and Conditions' />
+          <Form.Checkbox label='I agree to the Terms and Conditions' required />
         </Form.Field>
 
         <Button type='button' as={Link} to="/Home" onClick={this.handleClick}>Submit</Button>

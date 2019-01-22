@@ -7,7 +7,7 @@ import store from './reducers';
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Provider store={store} className='background'>
+  <Provider store={store}>
     <App />
   </Provider>, 
   document.getElementById('root')
