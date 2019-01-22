@@ -15,6 +15,7 @@ const Login = (state = initialState, action) => {
         case SIGNUP:
             array.push(action.info);
             newState.user = array;
+            newState.signup = true;
             return newState; 
         // finds user and sets user array to single user
         // sets login to true 

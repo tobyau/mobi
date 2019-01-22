@@ -1,16 +1,20 @@
 import React from 'react'
 import PresentationalCard from './PresentationalCard';
+import { Grid } from 'semantic-ui-react';
+import './GamePage.css';
 
 //const TetrisPicture = require();
 const items = [
   {
-    src: window.location.origin + '/GamePictures/Tetris.png',
+    picture: '/GamePictures/Tetris.png',
+    id: 'QQ5U-rN7Veg',
     name: 'Tetris',
     description: 'It is tetris cmon',
   },
   {
-    src: 'https://react.semantic-ui.com/images/avatar/large/matthew.png',
-    name: 'Mattew',
+    picture:'https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcegOkVb21TDTzcq5gnihG6VlWWI7EHdms767cI7A8IT8qu.OLHcv4D7OAXwA55k9jQhIMB8CH1dqlQvZW1PVrtDvW0zgq9kfklZn6u71hgbWnfpRHFC6rThtIMrMxlGWD4aAH117btbnh.uD7pLxsezIBr_.FaGbIV5.EBWwUVOU-&h=1080&w=1920&format=jpg',
+    id: 'k0GiO554wnk',
+    name: 'Naruto',
     description: 'Matthew is a musician living in Nashville.',
   }
 ]
@@ -22,8 +26,10 @@ var games = items.map((element, index) => (<div key={index}> <PresentationalCard
 // this is used as a demo 
 const GamePage = () => {
   return(
-    <div>
-      {games}
+    <div className='games-container'>
+      <Grid centered relaxed='very'>
+          {games}
+      </Grid>
     </div>
   );
 };

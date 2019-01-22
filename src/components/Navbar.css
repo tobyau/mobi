@@ -4,4 +4,6 @@
 
 .navleft{
     margin-left: 15px !important;
+    color: white !important;
+    border: solid white !important;
 }

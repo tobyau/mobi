@@ -27,13 +27,10 @@ class SignupForm extends Component {
       this.state.username,
       this.state.password
     );
-    console.log(this.props.onSignup);
-    //console.log(this.state);
     this.setState({ firstName: '', lastName: '', username: '', password: '' });
   }
 
   render() {
-    console.log(this.props)
     return (
       <Form>
         <Form.Field>
