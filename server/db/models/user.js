@@ -1,8 +1,12 @@
-module.exports = (db, Sequelize) => {
-    return db.define('users', {
-      firstName: { type: Sequelize.STRING, allowNull: false },
-      lastName: { type: Sequelize.STRING, allowNull: false },
-      username: { type: Sequelize.TEXT, validate: { isEmail: true } },
-      password: { type: Sequelize.STRING, allowNull: false },
-    });
-  }
+const db = require("../db");
+const Sequelize = require("sequelize");
+
+
+const User = db.define("user", {
+  firstName: { type: Sequelize.STRING, allowNull: false },
+  lastName: { type: Sequelize.STRING, allowNull: false },
+  username: { type: Sequelize.STRING, allowNull: false },
+  password: { type: Sequelize.STRING, allowNull: false },
+});
+
+module.exports = User;

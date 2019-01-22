@@ -1,17 +1,18 @@
 // create express app 
 // set up middleware, user authentication 
-const path = require('path');
-const express = require('express');
+const express = require("express");
 const app = express();
-const api = require('./server/api');
-const PATH_DIR = process.env.NODE_ENV === 'production' ? 'build' : 'public';
+const path = require("path");
+const bodyParser = require("body-parser");
+const { User } = require('./db/models');
 
-app.use(express.json());
-app.use('/api', api);
-app.use(express.static(path.join(__dirname, `client/${PATH_DIR}`)));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, `client/${PATH_DIR}/index.html`))
-});
+app.use(express.static(path.join(__dirname, '..', 'client', 'public')));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded());
+
+app.use("/api", require("./api"));
+
+User.sync().then(() => console.log("tables created!"));
 
 app.listen(3000, () => {
   console.log('Listening on Port 3000');
