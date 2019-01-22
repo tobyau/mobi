@@ -27,7 +27,7 @@ const RoutePages = () => (
       <Route exact path='/Leaderboard' component={LeaderboardPage}/>
       <Route exact path='/Friends' component={FriendsPage}/>
       <Route exact path='/Profile' component={ProfilePage}/>
-      <Route exact path='/Tetris' component={TetrisGamePage}/>
+      <Route exact path='/Home/Tetris' component={TetrisGamePage}/>
     </Switch>
   </div>
 )

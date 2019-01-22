@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Tetris.css';
+
 const Tetris = require('react-tetris');
 
 class TetrisGame extends Component {
@@ -9,7 +10,10 @@ class TetrisGame extends Component {
       points: 0
     }
   }
+
+
   render(){
+    console.log(this.state.points);
     return(
       <Tetris>
         {({

@@ -1,8 +1,11 @@
 import React from 'react'
-import { Image } from 'semantic-ui-react'
+import { Image, Header } from 'semantic-ui-react'
 
-const ImageExampleCircular = () => (
-  <Image src='/images/wireframe/square-image.png' size='medium' circular />
+const ProfilePage = () => (
+  <div>
+    <Image centered src='https://react.semantic-ui.com/images/avatar/large/matthew.png' size='medium' circular />
+    <Header size='huge' textAlign='center' >Mattew</Header>
+  </div>
 )
 
-export default ImageExampleCircular;
+export default ProfilePage;

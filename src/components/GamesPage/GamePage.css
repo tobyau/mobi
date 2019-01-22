@@ -1,18 +1,12 @@
-.GameCards{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    grid-row-gap: 50px;
-    text-align: center;
+.games-container{
+    margin-top: 80px;
 }
 
-.GameCards > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    height: 400px;
-    font-size: 30px;
-    text-align: center;
+.game-card{
+    width: 500px !important;
+    margin: 20px !important;
 }
 
-//Find the card css and fix it 
+.video{
+    height: 350px !important;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import TetrisGame from './TetrisGame';
+import './Tetris.css'
 
 function TetrisGamePage() {
     return(

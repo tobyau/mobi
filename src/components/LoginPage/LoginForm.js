@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-//import { logIn } from '../actions';
 
 
 class LoginForm extends Component {

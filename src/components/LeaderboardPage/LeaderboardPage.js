@@ -1,68 +1,36 @@
 import React from 'react';
 import { Table, Image , Header} from 'semantic-ui-react';
+import './LeaderboardPage.css'
 
 const BoardHeader = () => (
-  <Header as='h2' block textAlign="center" inverted color="blue">
+  <Header as='h2' block inverted color="blue" className="header">
     Leaderboard
   </Header>
 )
 
 const Leaderboard = () => (
-  <Table basic='very' celled collapsing>
+  <Table fixed textAlign='center' className='leaderboard'>
     <Table.Header>
       <Table.Row>
         <Table.HeaderCell>Rank</Table.HeaderCell>
         <Table.HeaderCell>Players</Table.HeaderCell>
+        <Table.HeaderCell>Points</Table.HeaderCell>
       </Table.Row>
     </Table.Header>
 
     <Table.Body>
       <Table.Row>
-        <Table.Cell>22</Table.Cell>
+        <Table.Cell>1</Table.Cell>
+        <Table.Cell> <Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />John</Table.Cell>
         <Table.Cell>
-          <Header as='h4' image>
-            <Image src='https://react.semantic-ui.com/images/avatar/small/lena.png' rounded size='mini' />
-            <Header.Content>
-              Lena
-              <Header.Subheader>Human Resources</Header.Subheader>
-            </Header.Content>
-          </Header>
+          10
         </Table.Cell>
       </Table.Row>
       <Table.Row>
-        <Table.Cell>11</Table.Cell>
+        <Table.Cell>2</Table.Cell>
+        <Table.Cell><Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />Jill</Table.Cell>
         <Table.Cell>
-          <Header as='h4' image>
-            <Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />
-            <Header.Content>
-              Mark
-              <Header.Subheader>Executive</Header.Subheader>
-            </Header.Content>
-          </Header>
-        </Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>11</Table.Cell>
-        <Table.Cell>
-          <Header as='h4' image>
-            <Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />
-            <Header.Content>
-              Mark
-              <Header.Subheader>Executive</Header.Subheader>
-            </Header.Content>
-          </Header>
-        </Table.Cell>
-      </Table.Row>
-      <Table.Row>
-        <Table.Cell>11</Table.Cell>
-        <Table.Cell>
-          <Header as='h4' image>
-            <Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />
-            <Header.Content>
-              Mark
-              <Header.Subheader>Executive</Header.Subheader>
-            </Header.Content>
-          </Header>
+          0
         </Table.Cell>
       </Table.Row>
     </Table.Body>

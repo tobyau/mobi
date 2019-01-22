@@ -1,5 +1,16 @@
+
+.App{
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+}
+  
 .App h1{
+    color: white;
     font-size: 50px;
     text-align: center;
-    margin: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px
   }
+
+
+
