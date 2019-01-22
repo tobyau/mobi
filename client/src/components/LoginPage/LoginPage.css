@@ -4,3 +4,11 @@
     margin-right: auto !important;
     margin-left: auto !important;
 }
+
+.tabpane{
+    display: inline-block !important;
+}
+
+.tab:hover > {
+    background-color: white;
+}
