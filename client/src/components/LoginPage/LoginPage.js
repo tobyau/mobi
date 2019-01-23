@@ -18,7 +18,7 @@ class LoginPage extends Component{
         ]
         return(
             <div className="forms">
-                <Tab panes={panes}/>
+                <Tab className="tab" panes={panes}/>
             </div>
         );
     }
