@@ -5,6 +5,12 @@
 
 .navleft{
     margin-left: 15px !important;
-    color: white !important;
-    border: solid white !important;
+    color: #4A5258 !important;
+    border: solid #4A5258 !important;
+    font-size: 17px;
+}
+
+.navleft:hover{
+    background-color: #42A1E7 !important;
+    color: white !important ;
 }

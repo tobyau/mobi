@@ -13,7 +13,7 @@ export const logIn = (username, password) => {
         }
     }
 }
-// create thunk creators 
+
 export const signUp = (first, last, username, password) => {
     return {
         type: SIGNUP,
@@ -34,8 +34,8 @@ export const loginthunk = (username, password) => (dispatch) => {
     })
 }
 
-export const signupthunk = (credentials) => (dispatch) => {
-    axios.post('/api/user', credentials)
+export const signupthunk = (first, last, username, password) => (dispatch) => {
+    axios.post('/api/user', {first, last, username, password})
     .then(user => {
         dispatch(Login(user))
     })

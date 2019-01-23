@@ -38,7 +38,7 @@ class LoginForm extends Component {
           <label>Password</label>
           <input name='password' placeholder='Password' onChange={this.handlePW}/>
         </Form.Field>
-        <Button type='button' as={Link} to="/Home" onClick={this.handleClick}>Login</Button>
+        <Button type='button' as={Link} to="/Home">Login</Button>
       </Form>
     );
   }

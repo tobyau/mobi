@@ -21,12 +21,16 @@ class SignupForm extends Component {
     });
   }
 
-/*
-  componentDidMount(){
-    axios.post('/api/user', this.state)
-      .then(res => console.log(res.data))
-  }
-*/
+  // handleClick = (e) => {
+      
+  //   this.props.onSignup(
+  //     this.state.firstName,
+  //     this.state.lastName,
+  //     this.state.username,
+  //     this.state.password
+  //   );
+  // }
+
   render() {
     return (
       <Form>
@@ -50,7 +54,7 @@ class SignupForm extends Component {
           <Form.Checkbox label='I agree to the Terms and Conditions' required />
         </Form.Field>
 
-        <Button type='button' as={Link} to="/Home">Submit</Button>
+        <Button type='button' as={Link} to="/Home" >Submit</Button>
 
       </Form>
     );
