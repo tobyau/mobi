@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+//import axios from 'axios';
 
 class SignupForm extends Component {
   // also need to input user information into database 
@@ -21,17 +21,6 @@ class SignupForm extends Component {
     });
   }
 
-  handleClick = (e) => {
-    axios.post('/api/user', this.state)
-      .then(res => console.log(res.data))
-      
-    this.props.onSignup(
-      this.state.firstName,
-      this.state.lastName,
-      this.state.username,
-      this.state.password
-    );
-  }
 /*
   componentDidMount(){
     axios.post('/api/user', this.state)
@@ -61,7 +50,7 @@ class SignupForm extends Component {
           <Form.Checkbox label='I agree to the Terms and Conditions' required />
         </Form.Field>
 
-        <Button type='button' as={Link} to="/Home" onClick={this.handleClick}>Submit</Button>
+        <Button type='button' as={Link} to="/Home">Submit</Button>
 
       </Form>
     );

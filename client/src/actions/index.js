@@ -27,8 +27,8 @@ export const signUp = (first, last, username, password) => {
 }
 
 // sign up middleware, sends post request to express server 
-export const loginthunk = (credentials) => (dispatch) => {
-    axios.post('/api/user', credentials)
+export const loginthunk = (username, password) => (dispatch) => {
+    axios.post('/api/user', {username, password})
     .then(user => {
         dispatch(Login(user))
     })

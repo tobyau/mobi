@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { signUp } from '../../actions';
+import { signupthunk } from '../../actions';
 import SignupForm from './SignupForm';
 
 const mapStateToProps = state => {
@@ -13,7 +13,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-      onSignup: (first, last, username, password) => dispatch(signUp(first, last, username, password)),
+      onSignup: (first, last, username, password) => dispatch(signupthunk(first, last, username, password)),
     };
   };
 

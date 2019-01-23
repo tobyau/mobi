@@ -20,12 +20,12 @@ class LoginForm extends Component {
     this.setState({password: e.target.value});
   }
 
-  handleClick = () => {
-    this.props.onLogin(
-      this.state.username,
-      this.state.password
-    );
-  }
+  // handleClick = () => {
+  //   this.props.onLogin(
+  //     this.state.username,
+  //     this.state.password
+  //   );
+  // }
 
   render(){
     return(

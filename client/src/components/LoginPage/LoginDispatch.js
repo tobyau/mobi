@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { logIn } from '../../actions';
+import { loginthunk } from '../../actions';
 import LoginForm from './LoginForm';
 
 const mapStateToProps = state => {
@@ -11,7 +11,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-      onLogin: (username, password) => dispatch(logIn(username, password)),
+      onLogin: (username, password) => dispatch(loginthunk(username, password)),
     };
   };
 
