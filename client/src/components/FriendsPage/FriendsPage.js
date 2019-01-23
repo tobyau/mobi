@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Image, List } from 'semantic-ui-react'
 
 const ListOfFriends = () => (
-  <List divided verticalAlign='middle'>
+  <List divided verticalAlign='middle' className="friends-list">
     <List.Item>
       <List.Content floated='right'>
         <Button>Add</Button>

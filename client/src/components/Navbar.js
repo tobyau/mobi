@@ -18,7 +18,7 @@ class MenuExampleSecondary extends Component {
                 <Dropdown button className='circular icon' icon='user outline'> 
                     <Dropdown.Menu>
                         <Dropdown.Item as={Link} to="/Profile">Profile</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/Sign-In">Sign In</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/">Sign Out</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
             </Menu.Item>

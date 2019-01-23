@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Image , Header} from 'semantic-ui-react';
+import { Table , Header} from 'semantic-ui-react';
 import './LeaderboardPage.css'
 
 const BoardHeader = () => (
@@ -21,18 +21,76 @@ const Leaderboard = () => (
     <Table.Body>
       <Table.Row>
         <Table.Cell>1</Table.Cell>
-        <Table.Cell> <Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />John</Table.Cell>
+        <Table.Cell>Naruto</Table.Cell>
         <Table.Cell>
-          10
+          900
         </Table.Cell>
       </Table.Row>
+
       <Table.Row>
         <Table.Cell>2</Table.Cell>
-        <Table.Cell><Image src='https://react.semantic-ui.com/images/avatar/small/mark.png' rounded size='mini' />Jill</Table.Cell>
+        <Table.Cell>Sasuke</Table.Cell>
         <Table.Cell>
-          0
+          900
         </Table.Cell>
       </Table.Row>
+
+      <Table.Row>
+        <Table.Cell>3</Table.Cell>
+        <Table.Cell>Naruto Shadow Clone</Table.Cell>
+        <Table.Cell>
+          24
+        </Table.Cell>
+      </Table.Row>
+
+      <Table.Row>
+        <Table.Cell>3</Table.Cell>
+        <Table.Cell>Naruto Shadow Clone</Table.Cell>
+        <Table.Cell>
+          24
+        </Table.Cell>
+      </Table.Row>
+
+      <Table.Row>
+        <Table.Cell>3</Table.Cell>
+        <Table.Cell>Naruto Shadow Clone</Table.Cell>
+        <Table.Cell>
+          24
+        </Table.Cell>
+      </Table.Row>
+
+      <Table.Row>
+        <Table.Cell>3</Table.Cell>
+        <Table.Cell>Naruto Shadow Clone</Table.Cell>
+        <Table.Cell>
+          24
+        </Table.Cell>
+      </Table.Row>
+
+      <Table.Row>
+        <Table.Cell>3</Table.Cell>
+        <Table.Cell>Naruto Shadow Clone</Table.Cell>
+        <Table.Cell>
+          24
+        </Table.Cell>
+      </Table.Row>
+
+      <Table.Row>
+        <Table.Cell>3</Table.Cell>
+        <Table.Cell>Naruto Shadow Clone</Table.Cell>
+        <Table.Cell>
+          24
+        </Table.Cell>
+      </Table.Row>
+
+      <Table.Row>
+        <Table.Cell>4</Table.Cell>
+        <Table.Cell>Sakura</Table.Cell>
+        <Table.Cell>
+          1
+        </Table.Cell>
+      </Table.Row>
+
     </Table.Body>
   </Table>
 )

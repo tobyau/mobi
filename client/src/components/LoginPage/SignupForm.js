@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 class SignupForm extends Component {
   // also need to input user information into database 
@@ -21,15 +22,22 @@ class SignupForm extends Component {
   }
 
   handleClick = (e) => {
+    axios.post('/api/user', this.state)
+      .then(res => console.log(res.data))
+      
     this.props.onSignup(
       this.state.firstName,
       this.state.lastName,
       this.state.username,
       this.state.password
     );
-    this.setState({ firstName: '', lastName: '', username: '', password: '' });
   }
-
+/*
+  componentDidMount(){
+    axios.post('/api/user', this.state)
+      .then(res => console.log(res.data))
+  }
+*/
   render() {
     return (
       <Form>

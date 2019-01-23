@@ -9,7 +9,6 @@ class LoginForm extends Component {
     this.state = {
       username: '',
       password: '',
-      login: false,
     }
   }
 
@@ -22,7 +21,10 @@ class LoginForm extends Component {
   }
 
   handleClick = () => {
-    this.setState({login: true});
+    this.props.onLogin(
+      this.state.username,
+      this.state.password
+    );
   }
 
   render(){

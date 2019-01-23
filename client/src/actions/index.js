@@ -1,3 +1,6 @@
+import axios from "axios";
+import Login from '../reducers/login'
+
 export const LOGIN = 'LOGIN';
 export const SIGNUP = 'SIGNUP'; // add new user 
 
@@ -21,6 +24,21 @@ export const signUp = (first, last, username, password) => {
             password,
         }
     }
+}
+
+// sign up middleware, sends post request to express server 
+export const loginthunk = (credentials) => (dispatch) => {
+    axios.post('/api/user', credentials)
+    .then(user => {
+        dispatch(Login(user))
+    })
+}
+
+export const signupthunk = (credentials) => (dispatch) => {
+    axios.post('/api/user', credentials)
+    .then(user => {
+        dispatch(Login(user))
+    })
 }
 
 // axios request to database 

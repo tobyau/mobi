@@ -1,8 +1,8 @@
-import { /*LOGIN, */ SIGNUP } from '../actions';
+import { LOGIN, SIGNUP } from '../actions';
 
 const initialState = {
     user: [],
-    //login: false,
+    login: false,
     signup: false
 }
 
@@ -19,17 +19,15 @@ const Login = (state = initialState, action) => {
             return newState; 
         // finds user and sets user array to single user
         // sets login to true 
-        /*
         case LOGIN:
             array = array.filter((element) => element.username === action.username);
             newState.user = array;
             newState.login = true;
             return newState;
-            */
+            
         default: 
             return state;
     }
 }
 
-// ideally want to combineReducers for multiple reducers 
 export default Login;

@@ -1,18 +1,25 @@
 
 .CompleteApp{
-  background-image: url("https://i.pinimg.com/originals/0a/b2/68/0ab268c8a5918132e1bccb7291a7c351.jpg");
-  height: 1000px; 
+  background-image: url("http://icanbecreative.com/resources/files/articles/40-high-resolution-wallpapers-for-minimalist-lovers/sources/everest-minimalist-wallpaper-blue.png");
+  height: 100%;
+  padding-bottom: 300px; 
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  text-align: center;
 }
   
 .App h1{
-    color: white;
+    color: #42A1E7  ;
+    background-color: #4A5258;
     font-size: 50px;
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 50px
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px;
   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LoginForm from './LoginForm';
+import LoginDispatch from './LoginDispatch';
 import { Tab } from 'semantic-ui-react';
 import SignupDispatch from './SignupDispatch';
 import './LoginPage.css'
@@ -13,7 +13,7 @@ depending on the action:
 class LoginPage extends Component{
     render(){
         const panes = [
-            { menuItem: 'Login', render: () => <Tab.Pane className="tabpane"> <LoginForm /> </Tab.Pane> },
+            { menuItem: 'Login', render: () => <Tab.Pane className="tabpane"> <LoginDispatch /> </Tab.Pane> },
             { menuItem: 'Signup', render: () => <Tab.Pane className="tabpane"> <SignupDispatch /> </Tab.Pane> }
         ]
         return(
