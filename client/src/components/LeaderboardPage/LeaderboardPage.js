@@ -2,6 +2,11 @@ import React from 'react';
 import { Table , Header} from 'semantic-ui-react';
 import './LeaderboardPage.css'
 
+/*
+Leaderboard Page
+Displays leaderboard title and table containing ranks, players, and points earned from respective players
+*/
+
 const BoardHeader = () => (
   <Header as='h2' block inverted color="blue" className="header">
     Leaderboard

@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-//import axios from 'axios';
+
+/*
+Asks for user credentials
+credentials are then stored in the redux store 
+thunk sends a axios post request and posts user credentials to database 
+*/
 
 class SignupForm extends Component {
   // also need to input user information into database 

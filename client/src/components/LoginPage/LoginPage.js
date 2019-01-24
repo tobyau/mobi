@@ -5,9 +5,7 @@ import SignupDispatch from './SignupDispatch';
 import './LoginPage.css'
 
 /*
-depending on the action:
-    if login is true, display login form
-    if signup is true, display signup form 
+Contains the login and sign up form
 */
 
 class LoginPage extends Component{

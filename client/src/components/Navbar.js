@@ -3,6 +3,11 @@ import { Input, Menu, Dropdown } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
+/*
+Navbar containing the different links 
+Links: home, leaderboard, friends list, profile, and sign out 
+*/
+
 class MenuExampleSecondary extends Component {
   render() {
     return (

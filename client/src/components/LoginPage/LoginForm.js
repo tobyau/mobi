@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
+/*
+Login Form
+Asks for username and password
+Clicking the login button will trigger an action to send an http request to verify that the inputted credentials match the user in the database
+*/
 
 class LoginForm extends Component {
   constructor(props){

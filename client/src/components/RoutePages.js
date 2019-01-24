@@ -9,7 +9,8 @@ import LeaderboardPage from './LeaderboardPage/LeaderboardPage'
 import TetrisGamePage from './GamesPage/TetrisGame/TetrisGamePage';
 
 /*
-If login or signup is true, 
+Contains the different pages 
+If a leaderboard button is clicked, it'll route the user to the leaderboard page
 */
 
 const RoutePages = () => (

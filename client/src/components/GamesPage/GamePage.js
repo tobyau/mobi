@@ -3,7 +3,12 @@ import PresentationalCard from './PresentationalCard';
 import { Grid } from 'semantic-ui-react';
 import './GamePage.css';
 
-//const TetrisPicture = require();
+/*
+Game page 
+Uses the presentational card component to display different game cards
+Cards include a picture, video demo, title, description and a "Play the game" button
+*/
+
 const items = [
   {
     picture: '/GamePictures/Tetris.png',

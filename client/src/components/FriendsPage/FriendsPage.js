@@ -2,6 +2,11 @@ import React from 'react'
 import { Button, Image, Table, Header } from 'semantic-ui-react'
 import './FriendsPage.css'
 
+/*
+Friends page component 
+displays a table of friends with respective view profile buttons next to each friend
+*/
+
 const ListOfFriends = () => (
   <div>
     <Header as='h2' block inverted color="blue">
