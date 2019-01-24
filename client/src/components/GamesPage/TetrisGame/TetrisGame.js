@@ -25,14 +25,23 @@ class TetrisGame extends Component {
         }) => {
           // Render it however you'd like
           return (
-            <div>
-              <HeldPiece />
-              <div>
+            <div className='game'>
+              <div className='points'>
                 <p>Points: {points}</p>
                 <p>Lines Cleared: {linesCleared}</p>
               </div>
-              <Gameboard />
-              <PieceQueue />
+              
+              <div className='heldPiece'>
+                <HeldPiece />
+              </div>
+
+              <div className='gameBoard'>
+                <Gameboard />
+              </div>
+
+              <div className='pieceQueue'>
+                <PieceQueue />
+              </div>
             </div>
           )
         }}
