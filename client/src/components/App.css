@@ -1,14 +1,5 @@
 
 .CompleteApp{
-  background-image: url("http://icanbecreative.com/resources/files/articles/40-high-resolution-wallpapers-for-minimalist-lovers/sources/everest-minimalist-wallpaper-blue.png");
-  height: 100%;
-  padding-bottom: 300px; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
   text-align: center;
 }
   

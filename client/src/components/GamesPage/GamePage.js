@@ -23,15 +23,15 @@ const items = [
     picture:'https://blznav.akamaized.net/img/games/cards/card-overwatch-7eff92e1257149aa.jpg',
     id: 'FqnKB22pOC0',
     header: 'Overwatch',
-    description: 'ayeee',
+    description: 'Overwatch is a team-based multiplayer first-person shooter video game developed and published by Blizzard Entertainment',
     name: 'Overwatch'
   },
   {
     picture:'https://www.zelda.com/breath-of-the-wild/assets/icons/BOTW-Share_icon.jpg',
     id: 'zw47_q9wbBE',
     header: 'Breath of the Wild',
-    description: 'NARUTOOOOOO',
-    name: 'Naruto'
+    description: 'The Legend of Zelda: Breath of the Wild is an action-adventure game developed and published by Nintendo',
+    name: 'Zelda'
   }
 ]
 

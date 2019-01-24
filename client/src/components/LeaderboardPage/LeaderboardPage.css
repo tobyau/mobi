@@ -1,6 +1,5 @@
 .header{
     width: 50%;
-    text-align: center;
     margin-right: auto !important;
     margin-left: auto !important;
     border: none !important;
@@ -10,4 +9,5 @@
     width: 50% !important;
     margin-right: auto !important;
     margin-left: auto !important;
+    font-size: 17px !important;
 }

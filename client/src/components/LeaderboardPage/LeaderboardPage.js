@@ -52,38 +52,6 @@ const Leaderboard = () => (
       </Table.Row>
 
       <Table.Row>
-        <Table.Cell>3</Table.Cell>
-        <Table.Cell>Naruto Shadow Clone</Table.Cell>
-        <Table.Cell>
-          24
-        </Table.Cell>
-      </Table.Row>
-
-      <Table.Row>
-        <Table.Cell>3</Table.Cell>
-        <Table.Cell>Naruto Shadow Clone</Table.Cell>
-        <Table.Cell>
-          24
-        </Table.Cell>
-      </Table.Row>
-
-      <Table.Row>
-        <Table.Cell>3</Table.Cell>
-        <Table.Cell>Naruto Shadow Clone</Table.Cell>
-        <Table.Cell>
-          24
-        </Table.Cell>
-      </Table.Row>
-
-      <Table.Row>
-        <Table.Cell>3</Table.Cell>
-        <Table.Cell>Naruto Shadow Clone</Table.Cell>
-        <Table.Cell>
-          24
-        </Table.Cell>
-      </Table.Row>
-
-      <Table.Row>
         <Table.Cell>4</Table.Cell>
         <Table.Cell>Sakura</Table.Cell>
         <Table.Cell>
